@@ -1,0 +1,29 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <h1>Employees</h1>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr>
+                <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees | async">
+                <td>{{employee.id}}</td>
+            <td>{{employee.firstName}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>{{employee.emailId}}</td>
+            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  
