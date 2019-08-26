@@ -15,10 +15,10 @@ const httpOptions = {
 })
 export class AuthService {
 
-  private loginUrl = 'http://localhost:8080/api/auth/signin';
-  private signupUrl = 'http://localhost:8080/api/auth/signup';
+  public loginUrl = 'http://localhost:8080/api/auth/signin';
+  public signupUrl = 'http://localhost:8080/api/auth/signup';
 
-  constructor(private http: HttpClient) {
+  constructor(public http: HttpClient) {
   }
 
   attemptAuth(credentials: AuthLoginInfo): Observable<JwtResponse> {
