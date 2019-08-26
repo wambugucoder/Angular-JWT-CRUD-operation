@@ -13,7 +13,7 @@ export class UserComponent implements OnInit {
   errorMessage: string;
   employees: Observable<Employee[]>;
 
-  constructor(private userService: UserService) { }
+  constructor(public userService: UserService) { }
   ngOnInit() {
     this.reloadData();
   }
