@@ -12,11 +12,11 @@ import { error } from 'util';
 })
 export class UserService {
 
-  private userUrl = 'http://localhost:8080/api/test/user';
-  private pmUrl = 'http://localhost:8080/api/test/pm';
-  private adminUrl = 'http://localhost:8080/api/test/admin';
-  private baseUrl = 'http://localhost:8080/api/employees';
-  constructor(private http: HttpClient) { }
+  public userUrl = 'http://localhost:8080/api/test/user';
+  public pmUrl = 'http://localhost:8080/api/test/pm';
+  public adminUrl = 'http://localhost:8080/api/test/admin';
+  public baseUrl = 'http://localhost:8080/api/employees';
+  constructor(public http: HttpClient) { }
   httpOptions = {
     headers: new HttpHeaders({
     'Content-Type': 'application/json'
